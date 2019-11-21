@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding: 0 calc(50% - 570px);
+}
+
+/*header & menu*/
+.header {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+    border: 1px solid #ececec;
+    background-color: #ffffff;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__form {
+    display: flex;
+    align-items: center;
+    margin-left: 37px;
+}
+
+.logo__img {
+    margin-right: 13px;
+}
+
+.header__cart {
+    margin-right: 26px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu__link {
+    color: #222222;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px;
+    display: block;
+}
+
+.browse {
+    width: 87px;
+    height: 38px;
+    border-radius: 3px 0 0 3px;
+    border: 1px solid #e6e6e6;
+    background-color: #cdcdcc;
+    color: #222222;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+}
+
+.search {
+    width: 317px;
+    height: 36px;
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+    padding-left: 15px;
+}
+
+.searchImg {
+    height: 38px;
+    border-radius: 0 3px 3px 0;
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+}
+
+.searchImg > img {
+    padding: 11px 11px;
+}
+
+.account {
+    width: 130px;
+    height: 38px;
+    background-color: #f16d7f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e6e6e6;
+    font-size: 15px;
+    letter-spacing: 0.38px;
+}
+
+.brand {
+    color: #222222;
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 300;
+    letter-spacing: 0.68px;
+}
+
+.d {
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 0.68px;
+    color: #f16d7f;
+}
+/*TODO
+   1) последнюю букву в бренде стиль макет
+   */
+
+/*action*/
+
+.active:active {
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+
+.active:hover {
+    color: aquamarine;
+}
+
+
+/*slide*/
+
+.promo {
+    background-color: #e8e8e8;
+    height: 613px;
+}
+
+.promo__content {
+    background-image: url("../img/Layer_24.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 -50px;
+    display: flex;
+    align-items: center;
+}
+
+.promo__text {
+    border-left: 12px solid #f16d7f;
+    padding-left: 12px;
+    color: #222222;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.promoHeadliner {
+    font-size: 60px;
+    letter-spacing: 1.5px;
+}
+
+.fashion {
+    color: #f16d7f;
+    letter-spacing: 1px;
+}
