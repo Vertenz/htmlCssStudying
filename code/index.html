@@ -7,38 +7,89 @@
     <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
-    <header class="center header">
-        <div class="header__left">
-            <a class="logo" href=""><img class="logo__img" src="img/logo.png" alt="logo"><p class="brand">BRAN<p class="d">D</p></p></a>
-            <form class="header__form" action="#">
-                <button class="browse active">Browse</button>
-                <input type="text" class="search" placeholder="Search for Item...">
-                <button type="submit" class="searchImg active"><img src="img/search.png" alt="search"></button>
-            </form>
-        </div>
-        <div class="header__right">
-            <a href="#"><img class="header__cart" src="img/cart.svg" alt="cart"></a>
-            <a href="#" class="button"><div class="account active">My Account</div></a>
-        </div>
-    </header>
-    <nav class="center">
-        <ul class="menu">
-            <li class="menu__list active"><a href="#" class="menu__link">Home</a></li>
-            <li class="menu__list active"><a href="#" class="menu__link">Man</a></li>
-            <li class="menu__list active"><a href="#" class="menu__link">Women</a></li>
-            <li class="menu__list active"><a href="#" class="menu__link">Kids</a></li>
-            <li class="menu__list active"><a href="#" class="menu__link">Accoseriese</a></li>
-            <li class="menu__list active"><a href="#" class="menu__link">Featured</a></li>
-            <li class="menu__list active"><a href="#" class="menu__link">Hot Deals </a></li>
-        </ul>
-    </nav>
-    <div class="promo center">
-        <div class="promo__content">
-            <div class="promo__text">
-                <p class="promoHeadliner">THE BRAND</p>
-                <p class="promoDescription">OF LUXERIOUS <span class="fashion">FASHION</span></p>
-            </div>
+<header class="center header">
+    <div class="header__left">
+        <a class="logo" href=""><img class="logo__img" src="img/logo.png" alt="logo">
+            <p class="brand">BRAN
+            <p class="d">D</p></p></a>
+        <form class="header__form" action="#">
+            <button class="browse active">Browse</button>
+            <input type="text" class="search" placeholder="Search for Item...">
+            <button type="submit" class="searchImg active"><img src="img/search.png" alt="search"></button>
+        </form>
+    </div>
+    <div class="header__right">
+        <a href="#"><img class="header__cart" src="img/cart.svg" alt="cart"></a>
+        <a href="#" class="button">
+            <div class="account active">My Account</div>
+        </a>
+    </div>
+</header>
+<nav class="center">
+    <ul class="menu">
+        <li class="menu__list active"><a href="#" class="menu__link">Home</a></li>
+        <li class="menu__list active"><a href="#" class="menu__link">Man</a></li>
+        <li class="menu__list active"><a href="#" class="menu__link">Women</a></li>
+        <li class="menu__list active"><a href="#" class="menu__link">Kids</a></li>
+        <li class="menu__list active"><a href="#" class="menu__link">Accoseriese</a></li>
+        <li class="menu__list active"><a href="#" class="menu__link">Featured</a></li>
+        <li class="menu__list active"><a href="#" class="menu__link">Hot Deals </a></li>
+    </ul>
+</nav>
+<div class="promo center">
+    <div class="promo__content">
+        <div class="promo__text">
+            <p class="promoHeadliner">THE BRAND</p>
+            <p class="promoDescription">OF LUXERIOUS <span class="fashion">FASHION</span></p>
         </div>
     </div>
+</div>
+<!-- не смог сделать отсутпы, пытался по разному. Когда создаю один общий флекс див, то не могу выравнить блоки( -->
+<div class="promo__categories center">
+    <div class="left">
+        <a href="#">
+            <div class="forMen">
+                <div class="textPromo active">
+                    <p>hot deal</p>
+                    <span>for men</span>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="accesories">
+                <div class="textPromo active">
+                    <p>luxirous &amp; trendy</p>
+                    <span>accesories</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="right">
+        <a href="#">
+            <div class="forWomen">
+                <div class="textPromo active">
+                    <p>30% offer</p>
+                    <span>women</span>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="forKids">
+                <div class="textPromo active">
+                    <p>new arrivals</p>
+                    <span>for kids</span>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="textBetweenBlocks">
+    <h2>fetured items</h2>
+    <p>Shop for items based on what we featured in this week</p>
+</div>
+
+<footer>
+    <div class="contetnt center"></div>
+</footer>
 </body>
 </html>
