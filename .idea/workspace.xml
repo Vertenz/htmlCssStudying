@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="298170a7-197d-4c1d-9776-52d02968c897" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/2/324083e0e2a8a4df2f1058acafa6f4d75138a8fc" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/2/324083e0e2a8a4df2f1058acafa6f4d75138a8fc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="298170a7-197d-4c1d-9776-52d02968c897" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,17 +32,18 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="C:/GeekBrains/prof/Верстка/дз" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -69,8 +74,8 @@
       <workItem from="1574626269288" duration="10042000" />
       <workItem from="1574893427709" duration="21105000" />
       <workItem from="1574917771194" duration="3447000" />
-      <workItem from="1575205697637" duration="171000" />
-      <workItem from="1575206592906" duration="395000" />
+      <workItem from="1575206990921" duration="8168000" />
+      <workItem from="1575231055809" duration="32316000" />
     </task>
     <servers />
   </component>
@@ -91,13 +96,17 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1575206985296">
+    <state x="277" y="74" key="SettingsEditor" timestamp="1575207007711">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1575206985296" />
-    <state x="277" y="74" key="SettingsEditor" timestamp="1575206954493">
+    <state x="277" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1575207007711" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1575231159980">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="277" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1575206954493" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.864@0.0.1536.864" timestamp="1575231159980" />
+    <state x="334" y="38" key="search.everywhere.popup" timestamp="1575238686306">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="334" y="38" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1575238686306" />
   </component>
 </project>
