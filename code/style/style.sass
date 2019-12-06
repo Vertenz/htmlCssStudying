@@ -6,20 +6,20 @@
   padding: 0
 
 
-body, html 
+body, html
   font-family: 'Lato', sans-serif
 
 
-a 
+a
   text-decoration: none !important
   color: #4a4a4a
 
 
-.center 
+.center
   padding: 0 calc(50% - 570px)
 
 
-footer 
+footer
   height: 79px
   background-color: #e6e6e6
   display: flex
@@ -46,7 +46,7 @@ details[open] > .browse-summary::after
 
 
 /*header & menu*/
-.header 
+.header
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.17)
   border: 1px solid #ececec
   background-color: #ffffff
@@ -54,32 +54,39 @@ details[open] > .browse-summary::after
   display: flex
   justify-content: space-between
   align-items: center
+
   &__left
     display: flex
     align-items: center
+
   &__right
     @extend .header__left
+    position: relative
+
   &__form
     display: flex
     align-items: center
     margin-left: 37px
+
   &__cart
     margin-right: 26px
+
   &__cart:active
     box-shadow: inset 1px 1px 1px $main-color
 
 
-
-.logo 
+.logo
   display: flex
   align-items: center
+
   &__img
     margin-right: 13px
 
-.menu 
+.menu
   list-style-type: none
   display: flex
   justify-content: center
+
   &__link
     color: #222222
     font-size: 14px
@@ -88,10 +95,11 @@ details[open] > .browse-summary::after
     padding: 20px
     display: block
     border-bottom: 3px solid white
+
   &__list
     position: relative
 
-.drop 
+.drop
   position: absolute
   border-radius: 5px
   background-color: white
@@ -100,6 +108,7 @@ details[open] > .browse-summary::after
   display: none
   top: 48px
   left: -5px
+
   &::before
     content: ''
     height: 12px
@@ -111,18 +120,26 @@ details[open] > .browse-summary::after
     position: absolute
     top: -7px
     left: 41px
+
   &__up
     top: 36px
     left: 23px
     background-color: white
     opacity: 1
+
+  &__left
+    left: -29px !important
+
   &__flex
     width: 235px
     margin-right: 46px
+
   &__flex:last-of-type
     margin-right: 0
+
   &__ul > li
     list-style: none
+
   &__h3
     border-bottom: 1px solid #e8e8e8
     color: #232323
@@ -134,20 +151,38 @@ details[open] > .browse-summary::after
     padding-bottom: 8px
     margin-bottom: 8px
     padding-top: 8px
+
   &__link
     color: #646464
     font-size: 14px
     font-weight: 400
     line-height: 28px
     letter-spacing: 0.35px
+
   &__last
     right: 0
     left: auto
+
   &__last:before
     right: 45px
     left: auto
 
-.browse 
+.drrop__right
+  @extend .drop
+  left: -29px !important
+  flex-direction: column
+  width: 214px !important
+  opacity: 0.7
+  background-color: #e8e8e8
+
+
+
+.total-at-cart
+  display: flex
+  justify-content: space-between
+
+
+.browse
   width: 87px
   height: 36px
   border-radius: 3px 0 0 3px
@@ -161,27 +196,42 @@ details[open] > .browse-summary::after
   font-weight: 300
   line-height: 32px
 
-.search 
+.search
   width: 317px
   height: 36px
   border: 1px solid #e6e6e6
   background-color: #ffffff
   padding-left: 15px
   padding-right: 15px
+
   &__img
     height: 38px
     border-radius: 0 3px 3px 0
     border: 1px solid #e6e6e6
     background-color: #ffffff
+
   &__img > img
     padding: 11px 11px
+
   &:focus
     outline: none
 
+.star
+  color: gold
+  margin-bottom: 10px
 
+.total-at-cart
+  text-transform: uppercase
+  font-size: 16px
+  font-weight: bold
+  font-stretch: normal
+  font-style: normal
+  line-height: normal
+  letter-spacing: normal
+  text-align: left
+  color: #222222
 
-
-.account 
+.account
   width: 130px
   height: 38px
   background-color: $main-color
@@ -191,10 +241,12 @@ details[open] > .browse-summary::after
   color: #ffffff
   font-size: 15px
   letter-spacing: 0.38px
+
   &:hover
     outline: 1px solid $main-color
     background-color: #ffffff
     color: $main-color
+
   &:active
     box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5)
 
@@ -212,12 +264,42 @@ details[open] > .browse-summary::after
   font-weight: 700
   +fashion($main-color)
 
+.cart
+  &__img
+    width: 72px
+    height: 85px
+    background-color: red
+    +flex-center(flex)
+
+  &__h
+    font-size: 12px
+    font-weight: bold
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: right
+    color: #222222
+    text-transform: uppercase
+    margin-bottom: 10px
+
+  &__price
+    font-size: 12px
+    font-weight: normal
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: left
+    color: #f16d7f
+    margin-bottom: 10px
 
 /*slide*/
 
 .promo
   background-color: #e8e8e8
   height: 613px
+
   &__content
     background-image: url("../img/Layer_24.jpg")
     height: 100%
@@ -225,6 +307,7 @@ details[open] > .browse-summary::after
     background-position: 0 -50px
     display: flex
     align-items: center
+
   &__text
     border-left: 12px solid $main-color
     padding-left: 12px
@@ -233,20 +316,21 @@ details[open] > .browse-summary::after
     font-weight: 400
     text-transform: uppercase
     line-height: 42px
+
   &__headliner
     font-size: 60px
     letter-spacing: 1.5px
+
   &__categories
     margin-top: 100px
     margin-bottom: 100px
     display: flex
     justify-content: space-between
+
   &__categories > div > a > div > div > span
     font-size: 30px
     letter-spacing: 0.75px
     color: $main-color
-
-
 
 
 .fashion
@@ -341,24 +425,30 @@ details[open] > .browse-summary::after
   width: 263px
   position: relative
   margin-bottom: 39px
+
   & > a
     overflow: hidden
+
   &__img
     width: 100%
     height: 280px
+
   &__text
     padding: 20px 13px
+
   &__name
     color: #222222
     font-size: 13px
     font-weight: 400
     text-transform: uppercase
+
   &__price
     color: $main-color
     font-size: 16px
     font-weight: 700
     text-transform: uppercase
     margin-top: 17px
+
   &__add
     border: 1px solid #ffffff
     width: 123px
@@ -398,9 +488,9 @@ details[open] > .browse-summary::after
   display: flex
   justify-content: center
   text-transform: capitalize
+
   &:hover
     +special-active()
-
 
 
 /*sale block*/
@@ -414,18 +504,22 @@ details[open] > .browse-summary::after
     background-position: left
     background-repeat: no-repeat
     position: relative
+
   &__text
     padding-top: 146px
     margin-left: 39px
+
   &__text > p
     color: #ffffff
     font-size: 35px
     font-weight: 700
     text-transform: uppercase
+
   &__h
     color: #fbfbfb
     font-size: 20px
     font-weight: 700
+
   &__textRight
     width: 219px
     height: 58px
@@ -434,16 +528,18 @@ details[open] > .browse-summary::after
     font-weight: 300
     line-height: 24px
     padding-top: 15px
+
   &__h2
     color: #ffffff
     font-size: 54px
     font-weight: 700
     text-transform: uppercase
+
   &__discount
     padding-left: 5px
+
   &__title
     padding-left: 5px
-
 
 
 .rightSide
@@ -452,15 +548,18 @@ details[open] > .browse-summary::after
   position: absolute
   left: 830px
   top: 30px
+
   & > article
     margin-bottom: 60px
+
   .deliverySale
     margin-bottom: 60px
+
   .sale__discount
     @extend .deliverySale
+
   .sale__quality
     @extend .deliverySale
-
 
 
 /*subscribe*/
@@ -470,6 +569,7 @@ details[open] > .browse-summary::after
   margin-top: 98px
   background-image: url("../img/subscribe.jpg")
   display: flex
+
   &__block
     width: 49%
     background-image: url("../img/subscribe2.jpg")
@@ -477,6 +577,7 @@ details[open] > .browse-summary::after
     flex-direction: column
     align-items: center
     height: 438px
+
   &__h
     font-size: 24px
     letter-spacing: 0.6px
@@ -486,11 +587,13 @@ details[open] > .browse-summary::after
     margin-top: 100px
     line-height: 29px
     margin-left: 76px
+
   &__text
     color: #222224
     font-size: 14px
     font-weight: 400
     margin-bottom: 32px
+
   &__button
     width: 104px
     height: 48px
@@ -506,17 +609,18 @@ details[open] > .browse-summary::after
     font-weight: 400
     line-height: 54px
     letter-spacing: 0.35px
+
   &__button:hover
     color: $main-color
     background-color: #ffffff
-  /*&__button > p
-    width: 63px
-    height: 10px
-    color: #ffffff
-    font-size: 14px
-    font-weight: 400
-    line-height: 54px
-    letter-spacing: 0.35px*/
+/*&__button > p
+  width: 63px
+  height: 10px
+  color: #ffffff
+  font-size: 14px
+  font-weight: 400
+  line-height: 54px
+  letter-spacing: 0.35px*/
 
 
 .comment
@@ -525,8 +629,10 @@ details[open] > .browse-summary::after
   height: 100%
   display: flex
   justify-content: center
+
   &__slide
     margin-top: 100px
+
   &__text
     width: 386px
     height: 68px
@@ -535,25 +641,27 @@ details[open] > .browse-summary::after
     font-style: italic
     line-height: 26px
     display: inline-block !important
+
   &__name
     margin-left: 82px
     margin-top: 18px
     color: $main-color
+
   &__from
     margin-left: 82px
-
-
 
 
 .pagination
   display: flex
   margin-left: 80px
   margin-top: 17px
+
   &__element
     width: 38px
     height: 4px
     background-color: white
     margin-right: 13px
+
   &__active
     width: 38px
     height: 4px
@@ -561,14 +669,8 @@ details[open] > .browse-summary::after
     background-color: $main-color
 
 
-
-
-
-
 .block
   position: relative
-
-
 
 
 .emailInput
@@ -578,12 +680,12 @@ details[open] > .browse-summary::after
   background-color: #e1e1e1
   padding-left: 20px
   padding-right: 105px
+
   &:active
     outline: none
+
   &:focus
     outline: none
-
-
 
 
 /*nav and description */
@@ -616,13 +718,17 @@ details[open] > .browse-summary::after
 .nav
   &__company
     margin-top: 109px
+
   &__company > h2
     text-transform: uppercase
     margin-bottom: 45px
-  &__company> ul
+
+  &__company > ul
     list-style: none
+
   &__information
     @extend .nav__company
+
   &__shop
     @extend .nav__company
 
@@ -646,6 +752,7 @@ details[open] > .browse-summary::after
 .icon
   display: flex
   margin-left: 690px
+
   &__item
     width: 32px
     height: 32px
@@ -660,9 +767,6 @@ details[open] > .browse-summary::after
     line-height: 42px
 
 
-
-
-
 /**********************************************************************************************************************/
 
 /*cart block*/
@@ -672,20 +776,23 @@ details[open] > .browse-summary::after
   background-color: #f8f3f4
   display: flex
   align-items: center
+
   &__crumbs
     margin-left: 770px
+
   &__crumbs > ul
     list-style: none
     display: flex
+
   &__link
     color: #636363
     font-size: 14px
     font-weight: 700
     line-height: 20px
     text-transform: uppercase
+
   &__lastLink
     color: $main-color !important
-
 
 
 .pick
@@ -698,10 +805,9 @@ details[open] > .browse-summary::after
   font-weight: 400
   line-height: 20px
   text-transform: uppercase
+
   &:hover
     color: red !important
-
-
 
 
 /*purchase*/
@@ -709,6 +815,7 @@ details[open] > .browse-summary::after
   &__table
     width: 100%
     border-collapse: collapse
+
   &__th
     padding: 20px
     color: #222222
@@ -718,39 +825,50 @@ details[open] > .browse-summary::after
     text-transform: uppercase
     border-bottom: 1px solid #eaeaea
     letter-spacing: -0.2px
+
   &__td
     padding: 20px
     border-bottom: 1px solid #eaeaea
+
   &__description
     margin-top: 38px
     margin-left: -110px
+
   &__name
     color: #222222
     font-size: 13px
     font-weight: 400
     text-transform: uppercase
     margin-left: -110px
+
   &__p
     color: #6f6e6e
     font-size: 13px
     font-weight: 300
     line-height: 20px
     display: contents
+
   &__image:hover
     outline: 2px solid $main-color
 
 
+.product-at-cart
+  display: flex !important
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 30px
+  & > div > a
+    padding: 43px 35px
+  & > div > a:hover .cart__img
+    background-color: red !important
 
+
+.link-at-cart:hover .cart__img
+  background-color: red !important
 
 
 .td__img
   padding-right: 0 !important
-
-
-
-
-
-
 
 
 .color, .size
@@ -761,11 +879,8 @@ details[open] > .browse-summary::after
   display: contents
 
 
-
 .description__td
   padding: 0
-
-
 
 
 .td__price
@@ -948,6 +1063,7 @@ details[open] > .browse-summary::after
   display: flex
   justify-content: center
   align-items: center
+
   &:hover
     +special-active()
 
@@ -963,6 +1079,7 @@ details[open] > .browse-summary::after
     align-items: center
     justify-content: space-between
     position: relative
+
   &__description
     width: 1141px
     height: 730px
@@ -975,12 +1092,14 @@ details[open] > .browse-summary::after
     align-items: center
     border: 1.5px solid #eaeaea
     background-color: #ffffff
+
   &__text-box
     width: 642px
     height: fit-content
     border-bottom: 1px solid #ef5b70
     +flex-center(flex)
     flex-direction: column
+
   &__description-text
     margin-top: 67px
     color: #5e5e5e
@@ -989,8 +1108,10 @@ details[open] > .browse-summary::after
     line-height: 24px
     width: 618px
     text-align: center
+
   &__boxH
     margin-top: 15px
+
   &__textBetween
     color: #4d4d4d
     font-size: 20px !important
@@ -1028,8 +1149,6 @@ details[open] > .browse-summary::after
   width: 63px
   height: 3px
   margin-top: -2.5px
-
-
 
 
 .composition
@@ -1147,14 +1266,15 @@ select
 video
   outline: 3px solid rebeccapurple
 
-  /********************************************************************************************************************/
+/********************************************************************************************************************/
 
-  /*product*/
+/*product*/
 
 .leftNav
   float: left
   padding-right: 0 !important
   margin-top: 70px
+
   &__category
     color: #6f6e6e
     font-size: 14px
@@ -1162,6 +1282,7 @@ video
     line-height: 33px
     width: 243px
     margin-bottom: 18px
+
   &__summary
     width: 252px
     color: #6f6e6e
@@ -1177,15 +1298,20 @@ video
     display: flex
     justify-content: space-between
     outline: none
+
   &__brand
     @extend .leftNav__category
+
   &__designer
     @extend .leftNav__category
+
   &__summary:hover
     color: $main-color
+
   &__sumary:active
     color: $main-color
     outline: none !important
+
   &__ul
     list-style: none
     margin-left: 16px
@@ -1197,6 +1323,7 @@ video
     letter-spacing: normal
     text-align: left
     color: #6f6e6e
+
   &__a
     text-decoration: none
 
@@ -1222,7 +1349,7 @@ details[open] > .leftNav__summary::after
   color: $main-color
 
 .leftNav__category[open] > .leftNav__summary
- color: $main-color
+  color: $main-color
 
 .leftNav__designer[open] > .leftNav__summary
   color: $main-color
@@ -1238,6 +1365,7 @@ details[close] > summary
   display: flex
   margin-left: 517px
   margin-top: 70px
+
   &__h
     font-weight: bold
     font-stretch: normal
@@ -1248,8 +1376,10 @@ details[close] > summary
     color: #6f6e6e
     text-transform: uppercase
     margin-bottom: 25px
+
   &__size
     width: 213px
+
   &__fieldset
     border: 0 !important
     color: #6f6e6e
@@ -1257,12 +1387,16 @@ details[close] > summary
     font-weight: 400
     line-height: 20px
     text-transform: uppercase
+
   &__fieldset > label
     margin-right: 23px
+
   &__fieldset > label > input
     margin-bottom: 16px
+
   &__form
     color: $main-color
+
   &__choose
     font-size: 14px
     font-weight: normal
@@ -1272,10 +1406,13 @@ details[close] > summary
     letter-spacing: normal
     text-align: left
     color: #6f6e6e
+
   &__trending
     margin-right: 115px
+
   &__legend
     @extend .filter__h
+
   &__size
     margin-right: 58px
 
@@ -1294,6 +1431,7 @@ details[close] > summary
   text-align: left
   color: #6f6e6e
   display: flex
+
   &__button
     width: 66px
     height: 30px
@@ -1309,10 +1447,13 @@ details[close] > summary
     text-transform: capitalize
     margin-right: 2px
     +flex-center(flex)
+
   &__button:hover
     +special-active()
+
   &__button:active
     +box-shadow()
+
   &__summary
     width: 86px
     height: 30px
@@ -1326,6 +1467,7 @@ details[close] > summary
     display: flex
     justify-content: space-between
     outline: none
+
   &__by
     display: flex
     margin-left: 9px
@@ -1381,11 +1523,14 @@ details[open] > .sort__summary::after
   display: flex
   width: 150px
   height: 44px
+
 .view-link-button
   border: 1px solid #ef5b70
   padding: 7px 44px
+
   &:hover
     +special-active
+
   &:active
     +box-shadow
 
@@ -1394,11 +1539,13 @@ details[open] > .sort__summary::after
   background-color: #222224
   display: flex
   justify-content: space-between
+
   & > div
     width: 309px
     display: flex
     flex-direction: column
     justify-content: center
+
   &__h
     font-size: 20px
     font-weight: bold
@@ -1408,15 +1555,16 @@ details[open] > .sort__summary::after
     letter-spacing: 0.5px
     text-align: center
     color: #fbfbfb
+
   &__p
-  font-size: 14px
-  font-weight: 300
-  font-stretch: normal
-  font-style: normal
-  line-height: 1.71
-  letter-spacing: 0.35px
-  text-align: center
-  color: #fbfbfb
+    font-size: 14px
+    font-weight: 300
+    font-stretch: normal
+    font-style: normal
+    line-height: 1.71
+    letter-spacing: 0.35px
+    text-align: center
+    color: #fbfbfb
 
 .product-subscribe
   margin-top: 0 !important
@@ -1439,6 +1587,7 @@ details[open] > .sort__summary::after
     text-transform: uppercase
     border-bottom: 1px solid #eaeaea
     border-top: 1px solid #eaeaea
+
   &__h
     font-size: 13px
     font-weight: normal
@@ -1450,6 +1599,7 @@ details[open] > .sort__summary::after
     color: #222222
     text-transform: uppercase
     margin-bottom: 15px
+
   &__p
     font-size: 13px
     font-weight: normal
@@ -1460,6 +1610,7 @@ details[open] > .sort__summary::after
     text-align: left
     color: #b3b2b2
     margin-bottom: 35px
+
   &__button
     font-size: 14px
     font-weight: bold
@@ -1477,27 +1628,37 @@ details[open] > .sort__summary::after
     +flex-center(flex)
     margin-top: 25px
     margin-bottom: 80px
+
   &__button-log
     @extend .checkoutPage__button
+
   &__a-log
     padding: 17px 67px
+
   &__a
     padding: 17px 54px
+
   &__a:hover
     +special-active()
+
   &__a:active
     +box-shadow()
+
   &__a-log:hover
     +special-active()
+
   &__a-log:active
     +box-shadow
+
   &__guest
     margin-left: 40px
     display: flex
     flex-direction: column
     align-items: start
+
   &__form
     margin-bottom: 35px
+
   &__form > label
     margin-left: 15px
 
@@ -1559,6 +1720,13 @@ details[open] > .checkoutPage__summary
   text-align: left
   color: #ff0d0d
   margin-bottom: 30px
+
+
+.test
+  background-color: #2f2f2f
+  width: 100px
+  height: 100px
+  outline: 1px solid red
 /**********************************************************************************************************************/
 
 .clearFix::after
@@ -1586,6 +1754,9 @@ details[open] > .checkoutPage__summary
 
 
 .menu__list:hover .drop
+  display: flex
+
+.header__cart:hover .drop
   display: flex
 
 
@@ -1654,5 +1825,11 @@ summary:hover .drop
   color: white
 
 
-.addToCart:active 
+.addToCart:active
   box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1)
+
+.header__cart:hover .drrop__right
+  display: flex !important
+
+.header__cart:hover .drop
+  display: flex !important
