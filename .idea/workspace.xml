@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="298170a7-197d-4c1d-9776-52d02968c897" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,6 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Sass File" />
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -33,17 +38,19 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Roaming/npm/sass.cmd" />
+    <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -76,6 +83,18 @@
       <workItem from="1574917771194" duration="3447000" />
       <workItem from="1575206990921" duration="8168000" />
       <workItem from="1575231055809" duration="32316000" />
+      <workItem from="1575313582764" duration="222000" />
+      <workItem from="1575320881311" duration="480000" />
+      <workItem from="1575321491679" duration="864000" />
+      <workItem from="1575397301121" duration="44000" />
+      <workItem from="1575397366555" duration="20000" />
+      <workItem from="1575410121878" duration="12069000" />
+      <workItem from="1575463989455" duration="9912000" />
+      <workItem from="1575486727379" duration="7958000" />
+      <workItem from="1575552442971" duration="3092000" />
+      <workItem from="1575565268158" duration="8708000" />
+      <workItem from="1575578030272" duration="1865000" />
+      <workItem from="1575579929642" duration="17298000" />
     </task>
     <servers />
   </component>
@@ -96,17 +115,29 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="277" y="74" key="SettingsEditor" timestamp="1575207007711">
+    <state x="755" y="0" width="781" height="864" key="EditFileWatcherDialog" timestamp="1575321332096">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="277" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1575207007711" />
+    <state x="755" y="0" width="781" height="864" key="EditFileWatcherDialog/0.0.1536.864@0.0.1536.864" timestamp="1575321332096" />
+    <state x="933" y="190" key="FileChooserDialogImpl" timestamp="1575468833097">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="933" y="190" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1575468833097" />
+    <state x="465" y="0" width="914" height="864" key="SettingsEditor" timestamp="1575579912255">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="465" y="0" width="914" height="864" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1575579912255" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1575231159980">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.864@0.0.1536.864" timestamp="1575231159980" />
-    <state x="334" y="38" key="search.everywhere.popup" timestamp="1575238686306">
+    <state x="450" y="181" key="scopes" timestamp="1575313764594">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="334" y="38" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1575238686306" />
+    <state x="450" y="181" key="scopes/0.0.1536.864@0.0.1536.864" timestamp="1575313764594" />
+    <state x="334" y="38" width="672" height="678" key="search.everywhere.popup" timestamp="1575587294642">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="334" y="38" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1575587294642" />
   </component>
 </project>
